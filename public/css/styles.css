@@ -1,0 +1,217 @@
+/* variables */
+:root{
+   --color-fondo-body:#eee; 
+   --color-fondo-header:black;
+   --color-fondo-footer:#ccc;
+}
+/* configuracion para modelo caja */
+*{
+    padding: 0 auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* Ajuste del font-size (10px) para trabajar con medidas rem */
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--color-fondo-body);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+/*************************************Estilos login*******************************/
+#section-login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+}
+.title-login{
+    margin: 50px;
+    font-size: 3rem;
+}
+.section-message-login{
+    color: red;
+}
+.section_formulario_login h2{    
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+#tabla_login{
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid gray;
+    border-spacing: 0px;
+}
+#tabla_login td{
+    background-color: gray;
+    color: white;
+    border: none;
+}
+/**********************************************************************************/
+/*************************************Estilos seccion main*************************/
+#main{
+    padding: 100px 200px;
+    width: 100vw;
+    margin: 0 auto;
+    font-size: 1.6rem;   
+    height: 90vh; 
+    overflow: auto;
+}
+/**********************************************************************************/
+/*************************************Estilos seccion footer***********************/
+#footer{
+    background-color: var(--color-fondo-footer);
+    padding: 20px;
+    height: 10vh;
+    position: sticky;
+    text-align: center;
+}
+/**********************************************************************************/
+/******************************Estilos generales para los parrafos*****************/
+.center{
+    text-align: center;
+}
+.error{
+    color:#ac2323;
+}
+.ocultar{
+    display: none;
+}
+/*********************************************************************************/
+/* **********************************Estilos seccion Header***********************/
+.menu{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+.menu_container{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-logo{
+    font-size: 1.8rem;
+}
+.menu_links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+}
+.menu_item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    /* custom properties */
+    --clip:polygon(0 0,100% 0, 100% 0, 0 0);
+    --transform:rotate(-90deg);
+}
+.menu_item:hover{
+        --clip:polygon(0 0,100% 0, 100% 100%, 0% 100%);
+        --transform:rotate(0);
+
+}
+.menu_link{
+    color:white;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.menu_link:hover{
+    background-color: gray;
+}
+.menu_arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+.menu_nesting{
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: black;
+    padding: 0;
+}
+.menu_link--inside{
+    padding: 10px 100px 10px 20px;
+}
+.menu_link--inside:hover{
+    background-color: gray;
+}
+/*******************************************************************************/
+p{
+    margin-top: 20px;
+}
+/***************************Estilos para los formularios***********************/
+input{
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.boton_radio{
+    margin: 0px 5px 0px 5px;
+}
+/******************************************************************************/
+/********************Estilos seccion resultados consulta***********************/
+.resultado_consulta{
+    height: 250px;
+    width: auto;
+    border: 1px solid;
+    overflow: scroll;
+    margin-top: 20px;
+}
+.resultado_documento{
+    width: 50%;
+    margin-top: 50px;
+}
+/*******************************************************************************/
+
+/*********************************Estilos para las tablas***********************/
+table{
+    font-size: 1.2rem;
+}
+.tabla_titulo{
+    color: white;
+    background-color:rgb(4, 4, 52);
+    font-size: 1.6rem;
+   
+}
+.tabla_consulta_encabezados{
+    position: sticky;
+    top: 0;   
+}
+th{
+    font-weight: normal;    
+	padding: 8px; 
+	background: #b9c9fe;
+    border-top: 4px solid #aabcfe; 
+	border-bottom: 1px solid #fff;
+	color: rgb(3, 26, 72);
+}
+td {
+	padding: 8px;
+	background: #e8edff;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+    color: rgb(10, 26, 145);
+	border-top: 1px solid #fff;
+    text-align: center;
+}
+.filas:hover td {
+	 background: #d0dafd;
+	 color: #339;
+	 }
+/*****************************************************************************/     
