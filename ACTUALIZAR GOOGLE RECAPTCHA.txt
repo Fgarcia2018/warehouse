@@ -1,0 +1,8 @@
+1. Ingresar a la siguiente URL ----> https://www.google.com/recaptcha
+2. Click en Gestionar Recaptcha
+3. Detalles de la clave
+4. Editar Clave, ahí ya se puede modificar los dominios asociado al recaptcha.
+
+PARA ELIMINAR O GESTIONAR PROYECTOS
+
+Para eliminar un proyecto en Google Cloud Platform (GCP), primero debes ir a la consola de Google Cloud y navegar a la página "IAM & Admin" > "Proyectos". Selecciona el proyecto que deseas eliminar y haz clic en "Cerrar" (o "Eliminar", según la interfaz). Luego, confirma la eliminación ingresando el ID del proyecto y haciendo clic en "Cerrar de todos modos"
